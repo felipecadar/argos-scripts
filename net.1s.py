@@ -27,11 +27,11 @@ def size(bytes, high, medium):
     return "<span color='%s'>%3d%s</span>" % (color, bytes, suffix)
 
 
-print("Net: %s↓ %s↑|font=monospace" %
+print("Net: %s↓ %s↑" %
       (size(recv, 1000000, 500000), size(sent, 750000, 350000)))
 print("---")
 for key in stats:
-    print("%s (%s)|font=monospace"
+    print("%s (%s)"
           % (key, 'up' if stats[key].isup else 'down'))
 print("---")
 print("Network connections|iconName=preferences-system-network-symbolic" +

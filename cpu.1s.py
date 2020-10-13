@@ -13,10 +13,10 @@ def show(cpu):
     return "<span color='%s'>%3d%%</span>" % (color, cpu)
 
 
-print("CPU: %s|font=monospace" % show(avg))
+print("CPU: %s" % show(avg))
 print("---")
 for i, cpu in enumerate(cpus):
-    print("CPU %d: %s|font=monospace" % (i, show(cpu)))
+    print("CPU %d: %s" % (i, show(cpu)))
 print("---")
 print("System monitor|iconName=utilities-system-monitor-symbolic" +
       " bash=gnome-system-monitor terminal=false")

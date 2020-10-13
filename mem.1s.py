@@ -21,14 +21,14 @@ def size(bytes):
 
 color = '#cc575d' if mem > 75 else '#d19a66' if mem > 50 else '#68b382'
 
-print("Mem: <span color='%s'>%3.d%%</span>|font=monospace" % (color, mem))
+print("Mem: <span color='%s'>%3.d%%</span>" % (color, mem))
 print("---")
-print("Total:     %s|font=monospace" % size(stats.total))
-print("Available: %s|font=monospace" % size(stats.available))
-print("Used:      %s|font=monospace" % size(stats.used))
-print("Buffers:   %s|font=monospace" % size(stats.buffers))
-print("Cached:    %s|font=monospace" % size(stats.cached))
-print("Shared:    %s|font=monospace" % size(stats.shared))
+print("Total:     %s" % size(stats.total))
+print("Available: %s" % size(stats.available))
+print("Used:      %s" % size(stats.used))
+print("Buffers:   %s" % size(stats.buffers))
+print("Cached:    %s" % size(stats.cached))
+print("Shared:    %s" % size(stats.shared))
 print("---")
 print("System monitor|iconName=utilities-system-monitor-symbolic" +
       " bash=gnome-system-monitor terminal=false")
